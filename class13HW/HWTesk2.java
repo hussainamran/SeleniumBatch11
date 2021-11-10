@@ -8,11 +8,12 @@ public class HWTesk2 {
 		 * odd number of caracters and has 3 or more characters print the character in the middle of the string 
 		 */
 		
-		String str="To day is Sunda";
-		System.out.println(str.isEmpty());
-		System.out.println(str.length());
-		System.out.println(str.substring(3, 9));
+		String str="hello";
 		
+		
+		if(!str.isEmpty()&&str.length()%2!=0&&str.length()>=3) {
+			System.out.println(str.charAt(str.length()/2));
+		}
 
 	}
 

@@ -1,24 +1,9 @@
-package com.syntax.class13HW;
+package com.syntax.class14;
 
-import java.util.Scanner;
-
-public class HWTask1 {
+public class Task2 {
 
 	public static void main(String[] args) {
-		
-		/*write a program that reads two people names and if they expecting boy or girl?
-		 * Base on the input suggests a name for a baby.
-		 * Example Output:
-Mom’s first name? Mary
-Dad’s first name? Daniel
-Boy or Girl? boy
-Suggested baby name: DANRY
-Example Output:
-Mom’s first name? Mary
-Dad’s first name? Daniel
-Boy or Girl? girl
-Suggested baby name: MAIEL
-		 */
+		// TODO Auto-generated method stub
 		
 		
 		String fatherName="Daniel";
@@ -35,13 +20,6 @@ Suggested baby name: MAIEL
 		System.out.println(firstPart+secondPart);
 
 	}
-		
-		
-		}
-		
-		
-		
-		
-	}
 
-
+}
+}
