@@ -13,7 +13,7 @@ public class hWTesk2 {
 		String str="AHGHGHSkhsfhuehuh@#$$##$97845845854";
 		
 		String str2=str.replaceAll("", " ");
-		System.out.println(str2.replaceAll("[^A-Za-z]", "").length());
+		System.out.println(str2.replaceAll("[^A-Za-z0-9]", "").length());
 			
 		}
 	}

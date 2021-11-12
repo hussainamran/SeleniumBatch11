@@ -11,16 +11,12 @@ public class hWTesk5 {
 		
 		String str="Iamhungry";
 		
-		String str2="";
-		
-		for(int i=str.length()-1;i>=0;i--) {
-			str2+=str.charAt(i);
-			
-			if(str.equals(str2)) {
-				System.out.println(str+ " is palindrome ");
-			}else {
-				System.out.println(str+ " is not palindrome");
-			}
+		StringBuilder strB=new StringBuilder(str);
+		strB.reverse();
+		if(str.equals(strB.toString())) {
+			System.out.println(str+ " is polindrome");
+		}else {
+			System.out.println(str+ " Not is palindrom");
 		}
 		
 		

@@ -7,12 +7,13 @@ public class hWTesk4 {
 		/*How would you reverse a String character by character?
 		 * 
 		 */
-		String str="Hello how are you?";
-		String str2="";
-		for(int i=str.length()-1; i>=0; i--) {
-			str2+=str.charAt(i);
+		String str="Hello how are you";
+		String[] strArr=str.split(" ");
+		
+		for(String word:strArr) {
+			StringBuilder stringbuilder=new StringBuilder(word);
+			System.out.print(stringbuilder.reverse()+" ");
 		}
-		System.out.println(str2);
 	}
 
 }
