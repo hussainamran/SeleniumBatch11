@@ -10,10 +10,8 @@ public class student {
 	 */
 	
 	String studentName;
-	int studentID;
+	String studentID;
 	static int numberOfStudents;
 	
-	void universe() {
-		System.out.println("Student name "+studentName+" student ID is " +studentID+ " student numbers "+numberOfStudents+" ");
-	}
+	
 }

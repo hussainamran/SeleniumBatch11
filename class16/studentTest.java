@@ -8,26 +8,27 @@ public class studentTest {
 		student obj=new student();
 		
 		obj.studentName="Amran";
-		obj.studentID=78;
+		obj.studentID="78";
 		obj.numberOfStudents ++;
-		obj.universe();
+		
 		
 		student obj1=new student();
 		
 		obj1.studentName="Farhad";
-		obj1.studentID=67;
-		obj1.numberOfStudents ++;
-		obj1.universe();
+		obj1.studentID="67";
+		obj.numberOfStudents ++;
+		
 		
 		
 		student obj2=new student();
 		
 		obj2.studentName="Alex";
-		obj2.studentID=34;
-		obj2.numberOfStudents ++;
-		obj2.universe();
+		obj2.studentID="34";
+		obj.numberOfStudents ++;
 		
-		System.out.println("Total number of students in batch 11 is "+obj2.numberOfStudents);
+		
+		System.out.println(obj.numberOfStudents);
+	
 	
 	}
 	

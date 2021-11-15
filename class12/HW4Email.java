@@ -7,16 +7,13 @@ public class HW4Email {
 	 * 
 	 */
 	
-	 String createEmail(String username, String lastName, String emailtype) {
-		 
-		
-		return username+lastName+"@"+emailtype+".com"; 
-		
+	String userName(String Fname, String Lname, String email) {
+		return Fname+Lname+"@"+email;
 	}
-	 
-	 public static void main(String []arg) {
-		 HW4Email inp=new  HW4Email ();
-		 System.out.println(inp.createEmail("Ron", "Shake", "gmail"));
-	 }
+	
+	public static void main(String[] args) {
+		HW4Email obj=new HW4Email();
+		System.out.println(obj.userName("amran", "hussain", "gmail"));
 
+}
 }

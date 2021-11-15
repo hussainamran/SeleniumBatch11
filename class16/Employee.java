@@ -12,14 +12,10 @@ Print out the eID , salary and  CEO for each of the objects
 		 * 
 		 */
 
-		int emID;
-		String salary;
-		String  ceo="Sumair";
-		
-		void benefit() {
-			System.out.println( "Employee Id is " +emID+ " employee salary "+salary+ " ceo is " +ceo);
-		}
-		
+		String emID;
+		double salary;
+		static String  ceo="Sumair";
+	
 		
 		}
 	
