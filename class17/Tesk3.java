@@ -9,7 +9,7 @@ public class Tesk3 {
 	 * 
 	 */
 	
-	private Tesk3(int age) {
+	private Tesk3(int age,String name) {
 		System.out.println("I am Privata constructors class");
 	}
 	public Tesk3(String name) {
@@ -23,7 +23,10 @@ public class Tesk3 {
 	}
 	
 	public static void main(String[] args) {
-		new Tesk3(13);
+		new Tesk3(13,"name");
+		new Tesk3("name");
+		new Tesk3();
+		new Tesk3(12.3);
 	}
 	
 }
