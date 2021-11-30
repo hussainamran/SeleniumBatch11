@@ -4,7 +4,7 @@ public class HWArrayDoublevalueFoorLoop {
 
 	public static void main(String[] args) {
 		
-		//rever an array
+		//revers an array
 		
 		double[] num= {10.0, 12.23, 23.21,12.34};
 		

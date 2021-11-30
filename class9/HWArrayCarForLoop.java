@@ -11,7 +11,7 @@ public class HWArrayCarForLoop {
 			for(int c=0; c<cars.length; c++) {
 				System.out.print(cars[c]+" ");
 			}
-			System.out.println(n+" ");
+			//System.out.println(n+" ");
 		}
 
 	}
