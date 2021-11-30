@@ -12,6 +12,7 @@ public class AddSubtractMultiplayDivide {
 		System.out.println(" The total of2numbers "+a+" and "+b+" is equil to "+c);
 		 
 		System.out.println("********************");
+		//this is just a test
 		
 		// Subtraction
 		
