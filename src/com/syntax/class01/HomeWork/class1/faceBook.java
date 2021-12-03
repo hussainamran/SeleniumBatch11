@@ -44,7 +44,7 @@ public class faceBook {
         driver.findElement(By.xpath("//input[@value='2']")).click();
         Thread.sleep(2000);
         driver.findElement(By.name("websubmit")).click();
-        driver.close();
+        driver.quit();
 
 
     }
