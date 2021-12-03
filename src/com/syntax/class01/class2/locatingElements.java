@@ -15,8 +15,8 @@ public class locatingElements {
         driver.findElement(By.name("pass")).sendKeys("hsdkjfnkdf");
         //driver.findElement(By.name("login")).click();
        // driver.findElement(By.linkText("Forgot password?")).click();
-        driver.findElement(By.partialLinkText("Forgot")).click();
-        driver.quit();
+        driver.findElement(By.linkText("Forgot")).click();
+       // driver.quit();
 
     }
 }
