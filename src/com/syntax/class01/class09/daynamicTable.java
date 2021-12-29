@@ -25,7 +25,7 @@ public class daynamicTable {
 
         //get all the rows
         List<WebElement> rows = driver.findElements(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr"));
-
+    //
         //print all the rows
         for (int i = 1; i < rows.size(); i++) {
             //get the text
