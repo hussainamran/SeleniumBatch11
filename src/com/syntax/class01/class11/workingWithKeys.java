@@ -1,0 +1,52 @@
+package com.syntax.class01.class11;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+public class workingWithKeys {
+    public static String url = "http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx";
+
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+        driver.get(url);
+
+        //locate the user name
+        WebElement username=driver.findElement(By.cssSelector("input#ctl00_MainContent_username"));
+       WebElement password= driver.findElement(By.cssSelector("input#ctl00_MainContent_password"));
+
+
+       //username
+      /*  username.sendKeys("Testers",Keys.BACK_SPACE);
+        username.sendKeys(Keys.TAB);
+
+        //password
+        password.sendKeys("test",Keys.ENTER);*/
+
+
+      username.sendKeys("Tester", Keys.TAB);
+       password.sendKeys("test",Keys.ENTER);
+      //  driver.findElement(By.cssSelector("input#ctl00_MainContent_login_button")).click();
+        TakesScreenshot ts=(TakesScreenshot) driver;
+        //to take the screen shot ths step takes the screen shot
+
+       File sourceFile =ts.getScreenshotAs(OutputType.FILE);
+
+       //save the screen shot in our computer
+
+        try{
+            FileUtils.copyFile(sourceFile,new File("screenshot/smartBeer/adminlogi2.png"));
+
+            //copy the screen shot to a new directory inside the project and give the path that particular screenshot
+        }catch(IOException e){
+            e.printStackTrace();
+    }
+    }
+}

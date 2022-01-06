@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 public class windowHandles {
@@ -21,7 +22,7 @@ public class windowHandles {
         WebElement newTab=driver.findElement(By.cssSelector("button#tabButton"));
         WebElement windowTab=driver.findElement(By.cssSelector("button#windowButton"));
 
-        //click on new tab and window
+
         newTab.click();
         windowTab.click();
 
@@ -34,7 +35,7 @@ public class windowHandles {
         // to switch to newtab and get the text
         // 1. get all handles
 
-        Set<String>allhandles=driver.getWindowHandles();
+        Set<String> allhandles=driver.getWindowHandles();
 
         // find the desired handle i.e of newtab by iterating theough the set
 

@@ -3,6 +3,7 @@ package com.syntax.class01.HomeWorkclass09;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,12 +28,16 @@ public class Task1 {
 
         WebDriverWait wait=new WebDriverWait(driver,20);
         wait.until(ExpectedConditions.alertIsPresent());
-        Alert simalert=driver.switchTo().alert();
-        simalert.accept();
+        Alert alert=driver.switchTo().alert();
+
+        alert.dismiss();
 
         driver.findElement(By.xpath("//button[@id='display-other-button']")).click();
-        //wait.until(ExpectedConditions.)
+       wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button#hidden")));
+      WebElement enableBtn=driver.findElement(By.cssSelector("button#hidden"));
+         System.out.println(enableBtn.isDisplayed());
 
+         driver.quit();
 
 
 
