@@ -22,7 +22,7 @@ public class DashbordPageTest {
         login.loginBtn.click();
         // test the deshboard page for the welcome elemnt task
         DashboardPage dashboardPage=new DashboardPage();
-        WebElement massage=dashboardPage.WlcomeAdmin;
+        WebElement massage=dashboardPage.wlcomeAdmin;
         System.out.println(massage.getText());
         CommonMethods.takeTheScreenShot("Dashbordpage");
         BaseClass.tearDown();

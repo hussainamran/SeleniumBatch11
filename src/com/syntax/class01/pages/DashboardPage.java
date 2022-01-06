@@ -6,8 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class DashboardPage extends CommonMethods {
-    @FindBy (id="menu_admin_viewAdminModule")
-    public WebElement WlcomeAdmin;
+    @FindBy (id="welcome")
+    public WebElement wlcomeAdmin;
 
     public DashboardPage(){
         PageFactory.initElements(driver,this);

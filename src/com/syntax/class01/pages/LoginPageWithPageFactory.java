@@ -15,8 +15,8 @@ public class LoginPageWithPageFactory extends CommonMethods {
     @FindBy(id="btnLogin")
     public WebElement loginBtn;
 
-    @FindBy (id="menu_admin_viewAdminModule")
-    public  WebElement getLoginBtn;
+    @FindBy (id="welcome")
+    public  WebElement welcomeAdmin;
 
     public LoginPageWithPageFactory(){
         PageFactory.initElements(driver,this);

@@ -1,7 +1,6 @@
 package com.syntax.class01.test;
 
 import com.syntax.class01.Utils.CommonMethods;
-import com.syntax.class01.pages.LoginPage;
 import com.syntax.class01.pages.LoginPageWithPageFactory;
 import com.syntax.class01.testBase.BaseClass;
 import org.openqa.selenium.WebElement;
